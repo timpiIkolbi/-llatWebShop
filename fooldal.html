@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BundaDia Webshop - Főoldal</title>
+    <link rel="stylesheet" href="cssReg.css">
+    <!-- Google Fonts a modern megjelenésért -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navigációs sáv -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="fooldal.html" class="logo">
+                <!-- Ha nincs meg a kép, a szöveges logo jelenik meg háttérként -->
+                <img class="foldal-img" src="pics/Képernyőkép_2026-04-20_111919-removebg-preview.png" alt="BundaDia Logo" onerror="this.style.display='none';">
+                <span class="logo-text">BundaDia🐾</span>
+            </a>
+    
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+    
+            <ul class="nav-links">
+                <li><a href="fooldal.html" class="active">Főoldal</a></li>
+                <li><a href="Termékek.html">Termékek</a></li>
+                <li><a href="Regisztráció.html">Regisztráció</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero / Fejléc szekció -->
+    <header class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>BundaDia</h1>
+            <p>Stílus. Minőség. Hangulat.</p>
+            <a href="Termékek.html" class="fedezd-fel">Fedezd fel a kínálatunkat</a>
+        </div>
+    </header>
+
+    <!-- Bemutatkozó / Kártya szekció -->
+    <main class="main-content">
+        <section class="welcome-section">
+            <div class="welcome-image">
+                <!-- Ideális esetben egy boldog kutyás/macskás kép helye -->
+                <div class="image-placeholder"></div>
+            </div>
+            <div class="welcome-text">
+                <h2>Üdv a BundaDia világában! 🐾</h2>
+                <p>
+                    Nálunk minden a boldog tappancsokról, csóváló farkakról és doromboló kedvencekről szól! 
+                    Válogatott minőségi termékekkel, szeretettel és egy kis extra cukisággal várunk minden gazdit és négylábú barátját.
+                </p>
+                <p>
+                    Legyen szó jutalomfalatról, játékról vagy kényelmes fekhelyről – a <strong>BundaDia</strong> azért van, hogy kedvencednek minden nap ünnep legyen! 🐶🐱
+                </p>
+                <a href="Regisztráció.html" class="btn-secondary">Csatlakozz a falkához</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Lábléc -->
+    <footer class="footer">
+        <p>&copy; 2026 BundaDia. Minden jog fenntartva.</p>
+    </footer>
+
+</body>
+</html> 

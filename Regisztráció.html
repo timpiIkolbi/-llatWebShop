@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="hu">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>BundaDia Webshop - Főoldal</title>
+        <link rel="stylesheet" href="cssReg.css">
+        <!-- Google Fonts a modern megjelenésért -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    </head>
+<body>
+    
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <a href="fooldal.html" class="logo">
+                    <!-- Ha nincs meg a kép, a szöveges logo jelenik meg háttérként -->
+                    <img class="foldal-img" src="pics/Képernyőkép_2026-04-20_111919-removebg-preview.png" alt="BundaDia Logo" onerror="this.style.display='none';">
+                    <span class="logo-text">BundaDia🐾</span>
+                </a>
+        
+                <input type="checkbox" id="menu-toggle">
+                <label for="menu-toggle" class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+        
+                <ul class="nav-links">
+                    <li><a href="fooldal.html" class="active">Főoldal</a></li>
+                    <li><a href="Termékek.html">Termékek</a></li>
+                    <li><a href="Regisztráció.html">Regisztráció</a></li>
+                </ul>
+            </div>
+        </nav> </header>
+
+    <div class="background-circles">
+        <div class="circle"></div>
+        <div class="circle"></div>
+    </div>
+
+    <div class="form-container-wrapper">
+        <form action="">
+            <header class="form-header">
+                <h1>Regisztráció</h1>
+                <p>Kérjük, töltse ki az alábbi mezőket</p>
+            </header>
+
+            <section class="input-grid">
+                <div class="field">
+                    <label for="name">Felhasználónév</label>
+                    <input type="text" id="name" placeholder="Példa Béla">
+                </div>
+                
+                <div class="field">
+                    <label for="pw">Jelszó</label>
+                    <input type="password" id="pw" placeholder="••••••••">
+                </div>
+
+                <div class="field">
+                    <label for="tel">Telefonszám</label>
+                    <input type="tel" id="tel" placeholder="+36 30 123 4567">
+                </div>
+
+                <div class="field">
+                    <label for="email">E-mail cím</label>
+                    <input type="email" id="email" placeholder="valaki@example.com">
+                </div>
+            </section>
+                
+            <div class="field">
+                <label>Születési dátum</label>
+                <div class="date-group">
+                    <input type="date">
+                </div>
+            </div>
+
+            <fieldset id="radiogroup">
+                <legend>Milyen állata van?</legend>
+                <label><input type="radio" name="auto" value="ferrari"> Macska</label>
+                <label><input type="radio" name="auto" value="trabant"> Kutya</label>
+                <label><input type="radio" name="auto" value="suzuki"> Madár</label>
+                <label><input type="radio" name="auto" value="suzuki"> Hüllő</label>
+                <label><input type="radio" name="auto" value="suzuki" checked> Egyéb</label>
+            </fieldset>
+            
+            <fieldset id="cbx">
+                <legend>Beállítások</legend>
+                <label><input type="checkbox" checked> Értesítések</label>
+                <label><input type="checkbox" checked> Hírlevél</label>
+                <label><input type="checkbox" checked> Feltételek elfogadása</label>
+            </fieldset>
+
+            <button type="submit" class="submit-btn">Küldés</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

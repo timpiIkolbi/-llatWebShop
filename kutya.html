@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BundaDia Webshop - Kutya Termékek</title>
+    <link rel="stylesheet" href="cssReg.css">
+</head>
+<body>
+    <header class="header2">
+        <nav class="navbar">
+            <div class="nav-container">
+                <a href="fooldal.html" class="logo">
+                    <img class="foldal-img" src="pics/Képernyőkép_2026-04-20_111919-removebg-preview.png" alt="BundaDia Logo" onerror="this.style.display='none';">
+                    <span class="logo-text">BundaDia🐾</span>
+                </a>
+        
+                <input type="checkbox" id="menu-toggle">
+                <label for="menu-toggle" class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+        
+                <ul class="nav-links">
+                    <li><a href="fooldal.html" class="active">Főoldal</a></li>
+                    <li><a href="Termékek.html">Termékek</a></li>
+                    <li><a href="Regisztráció.html">Regisztráció</a></li>
+                </ul> 
+        
+                <div class="cart-icon" id="cart-toggle">
+                    🛒 Kosár (<span id="cart-count">0</span>)
+                </div>        
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <div class="category-filter" style="text-align: center; margin-bottom: 3rem;">
+            <button class="btn category-btn" data-filter="all" style="margin: 0.5rem; background: #2b2d42;">
+                <a href="Termékek.html" style="text-decoration: none; color: inherit; display: block; width: 100%; height: 100%;">Összes</a>
+            </button>
+            <button class="btn category-btn" data-filter="kutya" style="margin: 0.5rem; background: #6c757d;">
+                <a href="kutya.html" style="text-decoration: none; color: inherit; display: block; width: 100%; height: 100%;">Kutyáknak</a>
+            </button>
+            <button class="btn category-btn" data-filter="macska" style="margin: 0.5rem; background: #6c757d;">
+                <a href="macska.html" style="text-decoration: none; color: inherit; display: block; width: 100%; height: 100%;">Macskáknak</a>
+            </button>
+        </div>
+
+        <!-- Kizárólag Kutyás Termékek Rácsa -->
+        <section class="products-section">
+            <h2>Kutyáknak Kínáljuk</h2>
+            <div class="products-grid">
+                
+                <!-- 1. Termék -->
+                <div class="product-card kutya">
+                    <div class="product-badge">Újdonság</div>
+                    <div class="product-img-placeholder kepek" id="kep1"></div>
+                    <h3>Csirkés Kutyatáp (10kg)</h3>
+                    <p class="price">12 990 Ft</p>
+                    <button class="add-to-cart-btn" data-name="Csirkés Kutyatáp (10kg)" data-price="12990">Kosárba</button>
+                </div>
+
+                <!-- 3. Termék -->
+                <div class="product-card kutya">
+                    <div class="product-img-placeholder kepek" id="kep3"></div>
+                    <h3>Kutyajáték Kötéllel</h3>
+                    <p class="price">2 490 Ft</p>
+                    <button class="add-to-cart-btn" data-name="Kutyajáték Kötéllel" data-price="2490">Kosárba</button>
+                </div>
+
+                <!-- 8. Termék -->
+                <div class="product-card kutya">
+                    <div class="product-img-placeholder kepek" id="kep8"></div>
+                    <h3>Kutya Póráz Bőr</h3>
+                    <p class="price">4 500 Ft</p>
+                    <button class="add-to-cart-btn" data-name="Kutya Póráz Bőr" data-price="4500">Kosárba</button>
+                </div>
+
+                <!-- 10. Termék -->
+                <div class="product-card kutya">
+                    <div class="product-badge">Akció</div>
+                    <div class="product-img-placeholder kepek" id="kep10"></div>
+                    <h3>Kutya Fekhely XL</h3>
+                    <p class="price">15 900 Ft</p>
+                    <button class="add-to-cart-btn" data-name="Kutya Fekhely XL" data-price="15900">Kosárba</button>
+                </div>
+
+                <!-- 14. Termék -->
+                <div class="product-card kutya">
+                    <div class="product-img-placeholder kepek" id="kep14"></div>
+                    <h3>Kutyasampon Aloe Vera</h3>
+                    <p class="price">2 990 Ft</p>
+                    <button class="add-to-cart-btn" data-name="Kutyasampon Aloe Vera" data-price="2990">Kosárba</button>
+                </div>
+
+                <!-- 16. Termék -->
+                <div class="product-card kutya">
+                    <div class="product-img-placeholder kepek" id="kep16"></div>
+                    <h3>Kutya Labda Gumi</h3>
+                    <p class="price">1 990 Ft</p>
+                    <button class="add-to-cart-btn" data-name="Kutya Labda Gumi" data-price="1990">Kosárba</button>
+                </div>
+
+                <!-- 19. Termék -->
+                <div class="product-card kutya">
+                    <div class="product-img-placeholder kepek" id="kep19"></div>
+                    <h3>Kutya Fogtisztító Rágó</h3>
+                    <p class="price">2 490 Ft</p>
+                    <button class="add-to-cart-btn" data-name="Kutya Fogtisztító Rágó" data-price="2490">Kosárba</button>
+                </div>
+
+                <!-- 21. Termék -->
+                <div class="product-card kutya">
+                    <div class="product-img-placeholder kepek" id="kep21"></div>
+                    <h3>Kutya Esőkabát</h3>
+                    <p class="price">5 490 Ft</p>
+                    <button class="add-to-cart-btn" data-name="Kutya Esőkabát" data-price="5490">Kosárba</button>
+                </div>
+
+                <!-- 25. Termék -->
+                <div class="product-card kutya">
+                    <div class="product-img-placeholder kepek" id="kep25"></div>
+                    <h3>Kutya Jutalomfalat Marhás</h3>
+                    <p class="price">1 890 Ft</p>
+                    <button class="add-to-cart-btn" data-name="Kutya Jutalomfalat Marhás" data-price="1890">Kosárba</button>
+                </div>
+
+                <!-- 29. Termék -->
+                <div class="product-card kutya">
+                    <div class="product-img-placeholder kepek" id="kep29"></div>
+                    <h3>Kutyanyakörv Bőr</h3>
+                    <p class="price">4 290 Ft</p>
+                    <button class="add-to-cart-btn" data-name="Kutyanyakörv Bőr" data-price="4290">Kosárba</button>
+                </div>
+
+                <!-- 31. Termék -->
+                <div class="product-card kutya">
+                    <div class="product-badge">Újdonság</div>
+                    <div class="product-img-placeholder kepek" id="kep31"></div>
+                    <h3>Kutya Utazótál</h3>
+                    <p class="price">2 490 Ft</p>
+                    <button class="add-to-cart-btn" data-name="Kutya Utazótál" data-price="2490">Kosárba</button>
+                </div>
+
+                <!-- 35. Termék -->
+                <div class="product-card kutya">
+                    <div class="product-img-placeholder kepek" id="kep35"></div>
+                    <h3>Kutya Hűtőmatrac</h3>
+                    <p class="price">9 990 Ft</p>
+                    <button class="add-to-cart-btn" data-name="Kutya Hűtőmatrac" data-price="9990">Kosárba</button>
+                </div>
+
+                <!-- 37. Termék -->
+                <div class="product-card kutya">
+                    <div class="product-img-placeholder kepek" id="kep37"></div>
+                    <h3>Kutyaház Fa</h3>
+                    <p class="price">39 990 Ft</p>
+                    <button class="add-to-cart-btn" data-name="Kutyaház Fa" data-price="39990">Kosárba</button>
+                </div>
+
+                <!-- 40. Termék -->
+                <div class="product-card kutya">
+                    <div class="product-img-placeholder kepek" id="kep40"></div>
+                    <h3>Kutya Télikabát</h3>
+                    <p class="price">7 990 Ft</p>
+                    <button class="add-to-cart-btn" data-name="Kutya Télikabát" data-price="7990">Kosárba</button>
+                </div>
+
+                <!-- 42. Termék -->
+                <div class="product-card kutya">
+                    <div class="product-badge">Akció</div>
+                    <div class="product-img-placeholder kepek" id="kep42"></div>
+                    <h3>Kutya Etetőtál Fém</h3>
+                    <p class="price">2 790 Ft</p>
+                    <button class="add-to-cart-btn" data-name="Kutya Etetőtál Fém" data-price="2790">Kosárba</button>
+                </div>
+
+                <!-- 45. Termék -->
+                <div class="product-card kutya">
+                    <div class="product-img-placeholder kepek" id="kep45"></div>
+                    <h3>Kutya Frizbi</h3>
+                    <p class="price">1 590 Ft</p>
+                    <button class="add-to-cart-btn" data-name="Kutya Frizbi" data-price="1590">Kosárba</button>
+                </div>
+
+                <!-- 48. Termék -->
+                <div class="product-card kutya">
+                    <div class="product-badge">Újdonság</div>
+                    <div class="product-img-placeholder kepek" id="kep48"></div>
+                    <h3>Kutya Autós Ülésvédő</h3>
+                    <p class="price">8 900 Ft</p>
+                    <button class="add-to-cart-btn" data-name="Kutya Autós Ülésvédő" data-price="8900">Kosárba</button>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Képeket betöltő JavaScript (Csak a létező kártyákhoz) -->
+        <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            // Végigmegyünk az összes lehetséges 1-50 közötti ID-n, és betöltjük a képet oda, ahol maradt kártya
+            for (let i = 1; i <= 50; i++) {
+                const imgContainer = document.getElementById(`kep${i}`);
+                if (imgContainer) {
+                    const imgElement = document.createElement('img');
+                    imgElement.src = `Pics/Termekekke/${i}.webp`; 
+                    imgElement.alt = `Kutya termék ${i}`;
+                    imgElement.style.width = '100%';
+                    imgElement.style.height = '100%';
+                    imgElement.style.objectFit = 'cover';
+                    imgContainer.appendChild(imgElement);
+                }
+            }
+        });
+        </script>
+
+        <!-- Oldalsávos Kosár -->
+        <aside class="cart-sidebar" id="cart-sidebar">
+            <div class="cart-header">
+                <h3>Kosarad tartalma</h3>
+                <span class="close-cart" id="close-cart">&times;</span>
+            </div>
+            <div id="cart-items">
+                <p class="empty-msg">A kosarad még üres.</p>
+            </div>
+            <div class="cart-footer">
+                <div class="total">Összesen: <span id="cart-total">0</span> Ft</div>
+                <button class="checkout-btn" id="checkout-btn">Megrendelés</button>
+            </div>
+        </aside>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 BundaDia. Minden jog fenntartva.</p>
+    </footer>
+
+    <script src="js.js"></script>
+</body>
+</html>

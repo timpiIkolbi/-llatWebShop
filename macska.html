@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BundaDia Webshop - Macska Termékek</title>
+    <link rel="stylesheet" href="cssReg.css">
+</head>
+<body>
+    <header class="header2">
+        <nav class="navbar">
+            <div class="nav-container">
+                <a href="fooldal.html" class="logo">
+                    <img class="foldal-img" src="pics/Képernyőkép_2026-04-20_111919-removebg-preview.png" alt="BundaDia Logo" onerror="this.style.display='none';">
+                    <span class="logo-text">BundaDia🐾</span>
+                </a>
+        
+                <input type="checkbox" id="menu-toggle">
+                <label for="menu-toggle" class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+        
+                <ul class="nav-links">
+                    <li><a href="fooldal.html" class="active">Főoldal</a></li>
+                    <li><a href="Termékek.html">Termékek</a></li>
+                    <li><a href="Regisztráció.html">Regisztráció</a></li>
+                </ul> 
+        
+                <div class="cart-icon" id="cart-toggle">
+                    🛒 Kosár (<span id="cart-count">0</span>)
+                </div>        
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <div class="category-filter" style="text-align: center; margin-bottom: 3rem;">
+            <button class="btn category-btn" data-filter="all" style="margin: 0.5rem; background: #2b2d42;">
+                <a href="Termékek.html" style="text-decoration: none; color: inherit; display: block; width: 100%; height: 100%;">Összes</a>
+            </button>
+            <button class="btn category-btn" data-filter="kutya" style="margin: 0.5rem; background: #6c757d;">
+                <a href="kutya.html" style="text-decoration: none; color: inherit; display: block; width: 100%; height: 100%;">Kutyáknak</a>
+            </button>
+            <button class="btn category-btn" data-filter="macska" style="margin: 0.5rem; background: #6c757d;">
+                <a href="macska.html" style="text-decoration: none; color: inherit; display: block; width: 100%; height: 100%;">Macskáknak</a>
+            </button>
+        </div>
+
+        <!-- Kizárólag Macskás Termékek Rácsa -->
+        <section class="products-section">
+            <h2>Macskáknak Kínáljuk</h2>
+            <div class="products-grid">
+                
+                <!-- 2. Termék -->
+                <div class="product-card macska">
+                    <div class="product-badge">Akció</div>
+                    <div class="product-img-placeholder kepek" id="kep2"></div>
+                    <h3>Macska Konzerv Lazaccal</h3>
+                    <p class="price">890 Ft</p>
+                    <button class="add-to-cart-btn" data-name="Macska Konzerv Lazaccal" data-price="890">Kosárba</button>
+                </div>
+
+                <!-- 4. Termék -->
+                <div class="product-card macska">
+                    <div class="product-img-placeholder kepek" id="kep4"></div>
+                    <h3>Macskakaparó Oszlop</h3>
+                    <p class="price">9 990 Ft</p>
+                    <button class="add-to-cart-btn" data-name="Macskakaparó Oszlop" data-price="9990">Kosárba</button>
+                </div>
+
+                <!-- 9. Termék -->
+                <div class="product-card macska">
+                    <div class="product-img-placeholder kepek" id="kep9"></div>
+                    <h3>Macskaalom Prémium</h3>
+                    <p class="price">3 990 Ft</p>
+                    <button class="add-to-cart-btn" data-name="Macskaalom Prémium" data-price="3990">Kosárba</button>
+                </div>
+
+                <!-- 11. Termék -->
+                <div class="product-card macska">
+                    <div class="product-img-placeholder kepek" id="kep11"></div>
+                    <h3>Macska Játék Egér</h3>
+                    <p class="price">1 200 Ft</p>
+                    <button class="add-to-cart-btn" data-name="Macska Játék Egér" data-price="1200">Kosárba</button>
+                </div>
+
+                <!-- 17. Termék -->
+                <div class="product-card macska">
+                    <div class="product-img-placeholder kepek" id="kep17"></div>
+                    <h3>Macskafű Magok</h3>
+                    <p class="price">890 Ft</p>
+                    <button class="add-to-cart-btn" data-name="Macskafű Magok" data-price="890">Kosárba</button>
+                </div>
+
+                <!-- 20. Termék -->
+                <div class="product-card macska">
+                    <div class="product-badge">Akció</div>
+                    <div class="product-img-placeholder kepek" id="kep20"></div>
+                    <h3>Macska Hám Pink</h3>
+                    <p class="price">3 490 Ft</p>
+                    <button class="add-to-cart-btn" data-name="Macska Hám Pink" data-price="3490">Kosárba</button>
+                </div>
+
+                <!-- 22. Termék -->
+                <div class="product-card macska">
+                    <div class="product-badge">Újdonság</div>
+                    <div class="product-img-placeholder kepek" id="kep22"></div>
+                    <h3>Macska Hordozó Táska</h3>
+                    <p class="price">12 900 Ft</p>
+                    <button class="add-to-cart-btn" data-name="Macska Hordozó Táska" data-price="12900">Kosárba</button>
+                </div>
+
+                <!-- 26. Termék -->
+                <div class="product-card macska">
+                    <div class="product-img-placeholder kepek" id="kep26"></div>
+                    <h3>Macska Fekhely Puha</h3>
+                    <p class="price">8 490 Ft</p>
+                    <button class="add-to-cart-btn" data-name="Macska Fekhely Puha" data-price="8490">Kosárba</button>
+                </div>
+
+                <!-- 30. Termék -->
+                <div class="product-card macska">
+                    <div class="product-img-placeholder kepek" id="kep30"></div>
+                    <h3>Macskaalagút Játék</h3>
+                    <p class="price">5 790 Ft</p>
+                    <button class="add-to-cart-btn" data-name="Macskaalagút Játék" data-price="5790">Kosárba</button>
+                </div>
+
+                <!-- 32. Termék -->
+                <div class="product-card macska">
+                    <div class="product-img-placeholder kepek" id="kep32"></div>
+                    <h3>Macska Ivókút Automata</h3>
+                    <p class="price">11 490 Ft</p>
+                    <button class="add-to-cart-btn" data-name="Macska Ivókút Automata" data-price="11490">Kosárba</button>
+                </div>
+
+                <!-- 36. Termék -->
+                <div class="product-card macska">
+                    <div class="product-img-placeholder kepek" id="kep36"></div>
+                    <h3>Macska Fésű Deluxe</h3>
+                    <p class="price">3 690 Ft</p>
+                    <button class="add-to-cart-btn" data-name="Macska Fésű Deluxe" data-price="3690">Kosárba</button>
+                </div>
+
+                <!-- 38. Termék -->
+                <div class="product-card macska">
+                    <div class="product-badge">Akció</div>
+                    <div class="product-img-placeholder kepek" id="kep38"></div>
+                    <h3>Macska Snack Csirkés</h3>
+                    <p class="price">990 Ft</p>
+                    <button class="add-to-cart-btn" data-name="Macska Snack Csirkés" data-price="990">Kosárba</button>
+                </div>
+
+                <!-- 41. Termék -->
+                <div class="product-card macska">
+                    <div class="product-badge">Népszerű</div>
+                    <div class="product-img-placeholder kepek" id="kep41"></div>
+                    <h3>Macska Kaparófa XXL</h3>
+                    <p class="price">24 990 Ft</p>
+                    <button class="add-to-cart-btn" data-name="Macska Kaparófa XXL" data-price="24990">Kosárba</button>
+                </div>
+
+                <!-- 46. Termék -->
+                <div class="product-card macska">
+                    <div class="product-img-placeholder kepek" id="kep46"></div>
+                    <h3>Macska WC Fedeles</h3>
+                    <p class="price">10 990 Ft</p>
+                    <button class="add-to-cart-btn" data-name="Macska WC Fedeles" data-price="10990">Kosárba</button>
+                </div>
+
+                <!-- 49. Termék -->
+                <div class="product-card macska">
+                    <div class="product-badge">Népszerű</div>
+                    <div class="product-img-placeholder kepek" id="kep49"></div>
+                    <h3>Macska Lézer Játék</h3>
+                    <p class="price">2 100 Ft</p>
+                    <button class="add-to-cart-btn" data-name="Macska Lézer Játék" data-price="2100">Kosárba</button>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Képeket betöltő JavaScript -->
+        <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            // Végigmegyünk az ID-kon és betöltjük a megfelelő képeket a meglévő macskás kártyákhoz
+            for (let i = 1; i <= 50; i++) {
+                const imgContainer = document.getElementById(`kep${i}`);
+                if (imgContainer) {
+                    const imgElement = document.createElement('img');
+                    imgElement.src = `Pics/Termekekke/${i}.webp`; 
+                    imgElement.alt = `Macska termék ${i}`;
+                    imgElement.style.width = '100%';
+                    imgElement.style.height = '100%';
+                    imgElement.style.objectFit = 'cover';
+                    imgContainer.appendChild(imgElement);
+                }
+            }
+        });
+        </script>
+
+        <!-- Oldalsávos Kosár -->
+        <aside class="cart-sidebar" id="cart-sidebar">
+            <div class="cart-header">
+                <h3>Kosarad tartalma</h3>
+                <span class="close-cart" id="close-cart">&times;</span>
+            </div>
+            <div id="cart-items">
+                <p class="empty-msg">A kosarad még üres.</p>
+            </div>
+            <div class="cart-footer">
+                <div class="total">Összesen: <span id="cart-total">0</span> Ft</div>
+                <button class="checkout-btn" id="checkout-btn">Megrendelés</button>
+            </div>
+        </aside>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 BundaDia. Minden jog fenntartva.</p>
+    </footer>
+
+    <script src="js.js"></script>
+</body>
+</html>
