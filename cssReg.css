@@ -24,7 +24,7 @@
     --transition: all 0.3s ease;
 }
 
-body {
+body { 
     background-color: var(--light-bg);
     color: var(--primary-color);
     line-height: 1.6;
@@ -735,36 +735,59 @@ footer {
         margin-right: 15px;
     }
 
-    /* Mobilmenü lenyíló animációja a checkbox aktiválásakor */
+    /* Mobilmenü: oldalsó slide-in (a checkbox és a .nav-links egy konténerben vannak) */
     .nav-links {
-        position: absolute;
+        position: fixed;
         top: 70px;
-        left: -100%;
-        width: 100%;
+        left: 0;
+        width: 85%;
+        max-width: 320px;
         height: calc(100vh - 70px);
         background-color: var(--card-bg);
+        display: flex;
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 35px;
-        transition: var(--transition);
-        box-shadow: 0 10px 20px rgba(0,0,0,0.05);
-        z-index: 999;
+        align-items: flex-start;
+        padding: 2.5rem 1.5rem;
+        gap: 20px;
+        transform: translateX(-110%); /* rejtve balra */
+        transition: transform 0.35s cubic-bezier(0.2, 0.8, 0.2, 1);
+        box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+        z-index: 1001;
+        overflow-y: auto;
     }
 
-    /* Ha a láthatatlan checkbox be van pipálva, beúszik a menü */
-    #menu-toggle:checked ~ .nav-container .nav-links {
+    /* Checkbox állapotára reagálva beúszik a menü */
+    #menu-toggle:checked ~ .nav-links {
+        transform: translateX(0);
+    }
+
+    /* overlay a tartalom elhomályosításához, kattintásra bezárja a menüt */
+    .nav-overlay {
+        position: fixed;
+        top: 70px;
         left: 0;
+        width: 100%;
+        height: calc(100vh - 70px);
+        background: rgba(0,0,0,0.45);
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.25s ease;
+        z-index: 1000;
     }
 
-    /* Hamburger ikon X formává alakulása aktív állapotban */
-    #menu-toggle:checked ~ .nav-container .hamburger span:nth-child(1) {
+    #menu-toggle:checked ~ .nav-overlay {
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+    /* Hamburger X animáció */
+    #menu-toggle:checked ~ .hamburger span:nth-child(1) {
         transform: rotate(-45deg) translate(-5px, 6px);
     }
-    #menu-toggle:checked ~ .nav-container .hamburger span:nth-child(2) {
+    #menu-toggle:checked ~ .hamburger span:nth-child(2) {
         opacity: 0;
     }
-    #menu-toggle:checked ~ .nav-container .hamburger span:nth-child(3) {
+    #menu-toggle:checked ~ .hamburger span:nth-child(3) {
         transform: rotate(45deg) translate(-5px, -6px);
     }
 
